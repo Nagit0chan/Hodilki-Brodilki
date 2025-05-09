@@ -1,1 +1,80 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    user-select: none;
 
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-color:bisque;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.panel {
+    width: 26vw;
+    height: 100vh;
+    background-color:navajowhite;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.score {
+    color: white;
+    font-size: 5vw;
+}
+
+.dice-button {
+    width: 14vw;
+    height: 3vw;
+    background-color: rgb(255, 192, 203);
+    border: 2px solid pink;
+    border-radius: 0.5vw;
+    color:white;
+    font-size: 1.8vw;
+    opacity: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.3vw;
+}
+
+.board {
+    width: 54vw;
+    height: 30vw;
+    margin-right: 10vw;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2px;
+}
+
+
+.game {
+    background-color: pink;
+    border-radius: 1vw; 
+    font-size: 4vw;
+    color: rgba(255,255,255,0.8);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start , .finish {
+    font-size: 1.5vw;;
+}
