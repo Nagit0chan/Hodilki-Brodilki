@@ -52,13 +52,13 @@ diceButton.mouseOn = false //Находится ли мышка над кноп�
 diceButton.addEventListener('mouseover', function(){
     diceButton.mouseOn = true
     if (diceButton.condition) {
-        diceButton.style.border = '.15vw solid white'
+        diceButton.style.border = '.15vw solid #f0e6ef'
     }
 })
 
 diceButton.addEventListener('mouseout', function(){
     diceButton.mouseOn = false
-    diceButton.style.border = '.15vw solid pink'
+    diceButton.style.border = '.15vw solid #f0a6ca'
 })
 
 function jumpLoop(jumps) {
@@ -94,7 +94,7 @@ function jumpLoop(jumps) {
                         {value: 1.5, duration: 250},
                         {value: 1, duration: 250}
                     ],
-                    translateX: gameCells[figure.currentCell].offsetWidth,
+                    translateX: (gameCells[figure.currentCell].offsetWidth + document.documentElement.clientWidth / 200),
                     easing: 'linear',
                     duration: 500,
                     delay: 100,
@@ -108,7 +108,7 @@ function jumpLoop(jumps) {
                         {value: 1.5, duration: 250},
                         {value: 1, duration: 250}
                     ],
-                    translateX: -gameCells[figure.currentCell].offsetWidth,
+                    translateX: -(gameCells[figure.currentCell].offsetWidth + document.documentElement.clientWidth / 200),
                     easing: 'linear',
                     duration: 500,
                     delay: 100,
@@ -122,7 +122,7 @@ function jumpLoop(jumps) {
                         {value: 1.5, duration: 250},
                         {value: 1, duration: 250}
                     ],
-                    translateY: gameCells[figure.currentCell].offsetHeight,
+                    translateY: gameCells[figure.currentCell].offsetHeight + document.documentElement.clientHeight / 200,
                     easing: 'linear',
                     duration: 500,
                     delay: 100,
@@ -144,7 +144,7 @@ function jumpLoop(jumps) {
             diceButton.innerHTML = 'Бросить кубик'
             diceButton.style.opacity = 1
             if (diceButton.mouseOn) {
-                diceButton.style.border = '.15vw solid white'
+                diceButton.style.border = '.15vw solid #f0e6ef'
             }
         }
 
@@ -157,7 +157,7 @@ diceButton.addEventListener('click', function(){
         diceButton.condition = false
         diceButton.innerHTML = 'Подождите...'
         diceButton.style.opacity = .5
-        diceButton.style.border = '.15vw solid pink'
+        diceButton.style.border = '.15vw solid #f0a6ca'
 
         anime({ //Анимация надписи числа ходов
             targets: score,

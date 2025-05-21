@@ -14,7 +14,7 @@ body {
 .background {
     width: 100vw;
     height: 100vh;
-    background-color:bisque;
+    background-color:#9c89b8;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -23,7 +23,7 @@ body {
 .panel {
     width: 26vw;
     height: 100vh;
-    background-color:navajowhite;
+    background-color:#efc3e6;
 
     display: flex;
     flex-direction: column;
@@ -33,44 +33,42 @@ body {
 }
 
 .score {
-    color: white;
+    color:#f0e6ef;
     font-size: 5vw;
 }
 
 .dice-button {
     width: 14vw;
     height: 3vw;
-    background-color: rgb(255, 192, 203);
-    border: .15vw solid pink;
-    border-radius: 0.5vw;
-    color:white;
+    background-color:#f0a6ca;
+    border: .15vw solid #f0a6ca;
+    border-radius: .5vw;
+    color:#f0e6ef;
     font-size: 1.8vw;
     opacity: 1;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 0.3vw;
+    padding-bottom: .3vw;
 }
 
 .board {
-    width: 56vw;
-    height: 30vw;
-    margin-right: 9vw;
-    margin-bottom: 1vw;
+    width: 58vw;
+    height: 32vw;
+    margin-right: 8vw;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    gap: .15vw;
+    gap: .5vw;
 }
 
 .game {
-    background-color: pink;
-    padding-bottom: 0.3vw;
-    border: .15vw outset rgb(255, 192, 203);
-    border-radius: 1vw; 
+    background-color:#efc3e6;
+    box-shadow: 0 .1vw .3vw rgba(0,0,0,0.3);
+    border-radius: .8vw; 
     font-size: 4vw;
-    color: rgba(255,255,255,0.8);
+    color:rgba(240, 230, 239, 0.8);
 
     display: flex;
     align-items: center;
@@ -78,7 +76,6 @@ body {
 }
 
 .start , .finish {
-    padding: 0;
     font-size: 1.5vw;
 }
 
